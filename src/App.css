@@ -7,25 +7,3 @@
   grid-template-columns: 2fr 10fr;
   grid-gap: 10px;
 }
-
-.header {
-  grid-area: header;
-  background-color:darkcyan;
-}
-
-.nav {
-  grid-area: nav;
-  background-color: azure;
-}
-
-.content {
-  grid-area: content;
-}
-
-.content img {
-  width: 100%;
-}
-
-.avatar {
-
-}

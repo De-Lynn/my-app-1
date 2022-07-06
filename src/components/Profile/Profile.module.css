@@ -1,0 +1,29 @@
+.content {
+  grid-area: content;
+}
+
+.banner{
+  width: 100%;
+}
+
+.userInfo {
+  display: grid;
+  grid-template-areas:
+  "header header header"
+  "avatar description description";
+  grid-template-columns: 100px 2fr;
+  grid-gap: 10px;
+}
+
+.header {
+  grid-area: header;
+}
+
+.avatar {
+  grid-area: avatar;
+  width: 100px;
+}
+
+.description {
+  grid-area: description;
+}
