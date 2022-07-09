@@ -1,25 +1,18 @@
+.contentArea {
+  background-color: azure;
+}
+
+div .banner {
+  background-color: white;
+  margin-top: 8px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+
+
 .banner{
-  width: 100%;
-}
-
-.userInfo {
-  display: grid;
-  grid-template-areas:
-  "header header header"
-  "avatar description description";
-  grid-template-columns: 100px 2fr;
-  grid-gap: 10px;
-}
-
-.header {
-  grid-area: header;
-}
-
-.avatar {
-  grid-area: avatar;
-  width: 100px;
-}
-
-.description {
-  grid-area: description;
+  width: 96%;
 }

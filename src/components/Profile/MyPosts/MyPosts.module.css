@@ -1,0 +1,21 @@
+div .newPost {
+    background-color: white;
+    margin-top: 8px;
+    margin-right: 8px;
+    margin-bottom: 4px;
+    padding: 12px;
+}
+
+div .allPosts {
+    background-color: white;
+    margin-top: 8px;
+    margin-right: 8px;
+    margin-bottom: 4px;
+    padding: 12px;
+}
+
+textarea {
+    margin: 8px 8px 8px 0px;
+    width: 600px;
+    height: 80px;
+}

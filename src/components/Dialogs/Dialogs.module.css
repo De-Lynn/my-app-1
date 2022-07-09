@@ -1,0 +1,30 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 3fr 8fr;
+    grid-gap: 8px;
+    background-color: azure;
+    padding-bottom: 8px;
+}
+
+.dialogsItems {
+    background-color: white;
+    padding: 8px;
+}
+
+.dialogsItems .active {
+    background-color: rgba(182, 240, 240, 0.819);
+}
+
+.dialog {
+    padding-left: 8px;
+}
+
+.messages {
+    background-color: white;
+    padding: 8px;
+    margin-right: 8px;
+}
+
+.message {
+
+}

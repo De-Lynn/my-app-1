@@ -3,6 +3,22 @@
     background-color: azure;
 }
 
-.item {
-    color: blue;
+.item a {
+    color: midnightblue;
+    text-decoration: none;
+    margin: auto 0;
+}
+
+div .item{
+    display: flex;
+    height: 28px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 4px;
+    margin-top: 4px;
+    margin-left: 8px;
+}
+
+div .item:hover {
+    background-color: rgba(182, 240, 240, 0.819);
 }
