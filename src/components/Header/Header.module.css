@@ -1,8 +1,10 @@
 .header {
     grid-area: header;
     background-color:darkcyan;
+    position: fixed;
+    width: inherit;
 }
-  
+
 .header img {
     width: 70px;
 }

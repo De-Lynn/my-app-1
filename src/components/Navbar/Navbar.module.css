@@ -1,6 +1,22 @@
+.layout {
+    background-color: azure;
+    margin-top: 60px;
+}
+
+.line {
+    width: 70%;
+    margin-block: 8px;
+    margin-inline: auto;
+    border-bottom: 1px solid rgb(215, 215, 215);
+}
+
 .nav {
     grid-area: nav;
     background-color: azure;
+}
+
+.item {
+    color: midnightblue;
 }
 
 .item a {
@@ -21,4 +37,39 @@ div .item{
 
 div .item:hover {
     background-color: rgba(182, 240, 240, 0.819);
+}
+
+div .friendList {
+    color: midnightblue;
+    display: flex;
+    flex-direction: column;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 4px;
+}
+
+.friendList .header {
+    text-align: center;
+    vertical-align: middle;
+    margin: auto 0;
+}
+
+div .friends {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 4px;
+}
+
+.friends img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.friend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 8px;
 }
