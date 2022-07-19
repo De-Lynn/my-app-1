@@ -3,13 +3,13 @@ import classes from './Navbar.module.css';
 
 const Navbar = (props) => {
 
-    let friends = props.state.friendsList.map((friend) => (
+    let friends = props.friendsList.map((friend) => (
         <div className={classes.friend}>
             <img src={friend.src} alt=''></img>
             <div>{friend.name}</div>
         </div>
         )   
-    )
+    );
 
     return (
         <div className={classes.layout}>
@@ -35,9 +35,8 @@ const Navbar = (props) => {
                 <div className={classes.header}>Friends</div>
                 <div className={classes.friends}>{ friends }</div>
             </div>
-        </div>
-        
-    );
+        </div> 
+    )
 }
 
 export default Navbar;
