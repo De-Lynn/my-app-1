@@ -4,7 +4,7 @@ import classes from './Navbar.module.css';
 const Navbar = (props) => {
 
     let friends = props.friendsList.map((friend) => (
-        <div className={classes.friend}>
+        <div className={classes.friend} key={friend.id}>
             <img src={friend.src} alt=''></img>
             <div>{friend.name}</div>
         </div>
@@ -28,6 +28,9 @@ const Navbar = (props) => {
                 </div>
                 <div className={classes.item}>
                     <NavLink to='/settings'>Settings</NavLink>
+                </div>
+                <div className={classes.item}>
+                    <NavLink to='/users'>Find users</NavLink>
                 </div>
             </nav>
             <div className={classes.line}></div>

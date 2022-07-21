@@ -23,14 +23,18 @@ const dialogsReducer = (state = initialState, action) => {
                 text: state.newMessageText,
                 src: 'https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg'
             }
-            state.messages.push(newMessage);
-            state.newMessageText = '';
-            return state;
+            return {
+                ...state,
+                messages: [...state.messages, newMessage],
+                newMessageText: ''
+            };
         case UPDATE_NEW_MESSAGE_TEXT:
-            state.newMessageText = action.messageText;
-            return state;
+            return {
+                ...state,
+                newMessageText: action.messageText
+            };
         default:
-            return state;
+            return state;       
     }
 }
 
