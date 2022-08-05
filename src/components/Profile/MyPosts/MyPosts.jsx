@@ -20,9 +20,9 @@ const MyPosts = (props) => {
     return (
         <div className={classes.posts}>
             <div className={classes.newPost}>
-                <div className={classes.header}>New post</div>
                 <div>
-                    <textarea onChange={onPostChange} ref={newPostElement} 
+                    <textarea placeholder='Write a new post...' 
+                              onChange={onPostChange} ref={newPostElement} 
                               value={props.newPostText}/>
                 </div>
                 <div>
@@ -31,7 +31,7 @@ const MyPosts = (props) => {
             </div>
             <div className={classes.allPosts}>
                 <div className={classes.header}>All posts</div>
-                {postsElements}
+                <div className={classes.post}>{postsElements}</div>
             </div>
         </div>
     );

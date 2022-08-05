@@ -1,21 +1,25 @@
-div .newPost {
-    background-color: white;
-    margin-top: 8px;
-    margin-right: 8px;
-    margin-bottom: 4px;
-    padding: 12px;
+.posts {
+    grid-row-start: 2;
+    margin: 8px;
 }
 
-div .allPosts {
+div .newPost {
     background-color: white;
-    margin-top: 8px;
-    margin-right: 8px;
-    margin-bottom: 4px;
-    padding: 12px;
+    padding: 16px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+
+.allPosts .header{
+    background-color: white;
+    padding: 16px;
+    margin-block: 8px;
+    border-radius: 8px;
 }
 
 textarea {
-    margin: 8px 8px 8px 0px;
+    margin: 0px 8px 8px 0px;
     width: 600px;
     height: 80px;
+    padding-left: 4px;
 }

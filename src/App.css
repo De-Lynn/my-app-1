@@ -5,10 +5,10 @@
   grid-template-areas: "header header" "nav content";
   grid-template-rows: 8vh 1fr;
   grid-template-columns:2fr 10fr;
-  grid-gap: 10px;
-  background-color: azure;
+  /* background-color: azure; */
+  background-color: rgb(237, 238, 240);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .appWrapperContent {

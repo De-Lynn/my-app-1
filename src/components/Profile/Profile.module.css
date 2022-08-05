@@ -1,5 +1,6 @@
 .contentArea {
-  background-color: azure;
+  background-color: rgb(237, 238, 240);
+  display: grid;
 }
 
 div .banner {
@@ -11,8 +12,14 @@ div .banner {
   padding-left: 16px;
 }
 
-
-
 .banner{
   width: 96%;
+}
+
+.userInfo {
+  grid-area: user-info;
+}
+
+.posts {
+  grid-area: posts;
 }

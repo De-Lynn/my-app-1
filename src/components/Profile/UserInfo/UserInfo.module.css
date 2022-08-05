@@ -1,4 +1,75 @@
 div .userInfo {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    margin: 8px;
+}
+
+.splitLine {
+    grid-column: 1/3;
+    width: 100%;
+    margin-block: 16px;
+    margin-inline: auto;
+    border-bottom: 1px solid rgb(215, 215, 215);
+}
+
+.photo {
+    background-color: white;
+    padding: 16px;
+    margin-right: 8px;
+    border-radius: 8px;
+}
+
+.photo img {
+    border-radius: 4px;
+}
+
+.aboutMe {
+    background-color: white;
+    padding: 16px;
+    margin-left: 8px;
+    border-radius: 8px;
+}
+
+div .fullName {
+    margin-bottom: 16px;
+    font-size: 20px;
+}
+
+.description {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.splitBlock {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: min-content;
+    grid-gap: 8px;
+    margin-block: 8px;
+    font-size: 14px;
+}
+
+.descriptionSplitLine {
+    grid-column: 2/3;
+    width: 100%;
+    margin-block: 8px;
+    margin-inline: auto;
+    border-bottom: 1px solid rgb(215, 215, 215);
+}
+
+.descriptionItem {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-block: 2px;
+    font-size: 14px;
+}
+
+.descriptionItem .property {
+    color: grey;
+}
+
+/* div .userInfo {
     background-color: white;
     margin-top: 8px;
     margin-right: 8px;
@@ -26,4 +97,15 @@ div .userInfo {
   
 .description {
     grid-area: description;
-}
+} */
+
+/* div .userInfo {
+    background-color: white;
+    display: grid;
+    grid-template-areas: ;
+    margin-top: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    padding: 12px;
+} */
+

@@ -1,5 +1,5 @@
 .layout {
-    background-color: azure;
+    background-color: rgb(237, 238, 240);
     margin-top: 8vh;
 }
 
@@ -12,7 +12,7 @@
 
 .nav {
     grid-area: nav;
-    background-color: azure;
+    background-color: rgb(237, 238, 240);
 }
 
 .item {
@@ -46,7 +46,7 @@ div .friendList {
     padding-left: 12px;
     padding-right: 12px;
     border-radius: 4px;
-    background-color: azure;
+    background-color: rgb(237, 238, 240);
 }
 
 .friendList .header {

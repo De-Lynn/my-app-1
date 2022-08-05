@@ -2,8 +2,11 @@
     display: grid;
     grid-template-columns: 60px 540px;
     color: black;
-    margin: 8px 8px 8px 0px;
+    background-color: white;
+    margin-block: 8px;
     grid-gap: 8px;
+    border-radius: 8px;
+    padding: 16px;
 }
 
 .avatar {
