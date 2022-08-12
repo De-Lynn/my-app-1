@@ -17,11 +17,6 @@ class UsersAPIContainer extends React.Component {
         this.props.setCurrentPage(pageNumber);
 
         this.props.getUsers(pageNumber, this.props.pageSize);
-
-        // usersAPI.getUsers(pageNumber, this.props.pageSize).then(data => {
-        //         this.props.toggleIsFetching(false);
-        //         this.props.setUsers(data.items)
-        // });
     }
 
     render() {
