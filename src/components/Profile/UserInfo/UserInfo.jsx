@@ -1,4 +1,5 @@
 import Preloader from '../../common/Preloader/Preloader';
+import ProfileStatus from './ProfileStatus/ProfileStatus';
 import classes from './UserInfo.module.css';
 
 const UserInfo = (props) => {
@@ -15,6 +16,7 @@ const UserInfo = (props) => {
             </div>
             <div className={classes.aboutMe}>
                 <div className={classes.fullName}>{props.profile.fullName}</div>
+                <ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
                 <div className={classes.splitLine}></div>
                 <div className={classes.description}>
                     <div className={classes.descriptionItem}>

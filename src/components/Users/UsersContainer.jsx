@@ -4,6 +4,8 @@ import React from 'react';
 import Users from './Users';
 import Preloader from '../common/Preloader/Preloader';
 import {getUsers} from '../../redux/users-reducer'
+import { compose } from 'redux';
+import { withAuthRedirect } from '../../hoc/withAuthRedirect';
 
 class UsersAPIContainer extends React.Component {
 
@@ -50,12 +52,7 @@ return {
 }
 }
 
-const UsersContainer = connect(mapStateToProps, {
-    follow,
-    unfollow,
-    setCurrentPage,
-    toggleIsFetching,
-    getUsers,
-})(UsersAPIContainer);
-
-export default UsersContainer;
+export default compose(
+    connect(mapStateToProps, {follow, unfollow, setCurrentPage, toggleIsFetching, getUsers,}),
+    withAuthRedirect,
+)(UsersAPIContainer);

@@ -8,7 +8,8 @@ const Profile = (props) => {
             {/* <div className={classes.banner}>
                 <img className={classes.banner} alt='' src='https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg' />
             </div> */}
-            <UserInfo className={classes.userInfo} profile={props.profile}/>
+            <UserInfo className={classes.userInfo} profile={props.profile}
+                      status={props.status} updateStatus={props.updateStatus}/>
             <MyPostsContainer className={classes.posts} />
         </div>
     );
