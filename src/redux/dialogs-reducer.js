@@ -1,5 +1,4 @@
 const SEND_MESSAGE = 'SEND-MESSAGE';
-const UPDATE_NEW_MESSAGE_TEXT = 'UPDATE-NEW-MESSAGE-TEXT';
 
 let initialState = {
     dialogs: [
@@ -13,33 +12,24 @@ let initialState = {
         {text: 'How are you?', src: 'https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg'},
         {text: 'I`m learning React.', src: 'https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg'}
     ],
-    newMessageText: ''
 }
 
 const dialogsReducer = (state = initialState, action) => {
     switch(action.type) {
         case SEND_MESSAGE:
             let newMessage = {
-                text: state.newMessageText,
+                text: action.newMessage,
                 src: 'https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg'
             }
             return {
                 ...state,
                 messages: [...state.messages, newMessage],
-                newMessageText: ''
-            };
-        case UPDATE_NEW_MESSAGE_TEXT:
-            return {
-                ...state,
-                newMessageText: action.messageText
             };
         default:
             return state;       
     }
 }
 
-export const sendMessage = () => ({type: SEND_MESSAGE})
-export const updateNewMessageText = (text) => 
-    ({type: UPDATE_NEW_MESSAGE_TEXT, messageText: text})
+export const sendMessage = (newMessage) => ({type: SEND_MESSAGE, newMessage: newMessage})
 
 export default dialogsReducer;

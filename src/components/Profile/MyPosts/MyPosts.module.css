@@ -3,7 +3,7 @@
     margin: 8px;
 }
 
-div .newPost {
+.newPost {
     background-color: white;
     padding: 16px;
     margin-bottom: 8px;
@@ -17,7 +17,7 @@ div .newPost {
     border-radius: 8px;
 }
 
-textarea {
+.newPost .textarea {
     margin: 0px 8px 8px 0px;
     width: 600px;
     height: 80px;
