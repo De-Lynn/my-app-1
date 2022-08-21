@@ -1,4 +1,6 @@
 import { Field, reduxForm } from 'redux-form';
+import { maxLengthCreator, requiredField } from '../../utils/validators/validators';
+import { Textarea } from '../common/FormsControls/formsControls';
 import Dialog from './Dialog/Dialog';
 import classes from './Dialogs.module.css';
 import Message from './Messages/Message';
@@ -7,7 +9,8 @@ const SendMessageForm = (props) => {
     return (
         <form className={classes.sendMessage} onSubmit={props.handleSubmit}>
             <Field name='newMessage' className={classes.textarea} 
-                placeholder='Write a message...' component={'input'} type={'text'}/>
+                placeholder='Write a message...' component={Textarea}
+                validate={[requiredField, maxLengthCreator(100)]}/>
             <button>Send</button>
         </form>
     )
